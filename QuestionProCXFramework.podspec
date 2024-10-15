@@ -11,7 +11,6 @@ Pod::Spec.new do |spec|
     spec.ios.deployment_target = '9.0'
   
     spec.ios.vendored_frameworks = [
-      "Frameworks/auth_library.xcframework",
-      "Frameworks/analytics_library.xcframework"
+      "QuestionProCXFramework.xcframework"
     ]
   end
