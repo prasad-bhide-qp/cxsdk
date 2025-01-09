@@ -7662,69 +7662,69 @@
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "StringLiteral",
       "offset": 8839,
-      "length": 16,
-      "value": "\"close_grey.png\""
+      "length": 17,
+      "value": "\"close_white.png\""
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9061,
+      "offset": 9062,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9166,
+      "offset": 9167,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9173,
+      "offset": 9174,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9184,
+      "offset": 9185,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9196,
+      "offset": 9197,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9297,
+      "offset": 9298,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9304,
+      "offset": 9305,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9315,
+      "offset": 9316,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9327,
+      "offset": 9328,
       "length": 2,
       "value": "20"
     },
