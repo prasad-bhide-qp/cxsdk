@@ -7663,7 +7663,7 @@
       "kind": "StringLiteral",
       "offset": 8839,
       "length": 16,
-      "value": "\"close_icon.png\""
+      "value": "\"close_grey.png\""
     },
     {
       "filePath": "\/Users\/admin\/QuestionPro\/ios-cx\/MobileCXFramework\/MobileCXManager.swift",
