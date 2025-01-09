@@ -9,7 +9,6 @@ Pod::Spec.new do |spec|
     spec.source        = { :git => 'https://github.com/prasad-bhide-qp/cxsdk.git', :tag => spec.version }
     spec.swift_version = '4.0'
     spec.ios.deployment_target = '9.0'
-    spec.resources  = "QuestionProCXFramework.xcframework/ios-arm64/QuestionProCXFramework.framework/close_white.png"
     spec.vendored_frameworks = [
       "QuestionProCXFramework.xcframework"
     ]
