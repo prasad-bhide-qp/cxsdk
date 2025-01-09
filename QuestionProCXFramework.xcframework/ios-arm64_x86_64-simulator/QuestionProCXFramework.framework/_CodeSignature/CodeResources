@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/QuestionProCXFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xSs5ypIl1Z4Yz9mhMZ0fIH1+/FM=
+		h24FgncXkYxhWlqmPaYENgn0/8A=
 		</data>
 		<key>Modules/QuestionProCXFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/QuestionProCXFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xSs5ypIl1Z4Yz9mhMZ0fIH1+/FM=
+		h24FgncXkYxhWlqmPaYENgn0/8A=
 		</data>
 		<key>Modules/QuestionProCXFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wFcK9R0ZncaHshdVwv1mHPxKNDrPkcC0d94VjmsyuNY=
+			YwbrpeEW+ctqPCg0WGbTiZejiFvFeqV2vmxDS07+dq0=
 			</data>
 		</dict>
 		<key>Modules/QuestionProCXFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -135,7 +135,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wFcK9R0ZncaHshdVwv1mHPxKNDrPkcC0d94VjmsyuNY=
+			YwbrpeEW+ctqPCg0WGbTiZejiFvFeqV2vmxDS07+dq0=
 			</data>
 		</dict>
 		<key>Modules/QuestionProCXFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
