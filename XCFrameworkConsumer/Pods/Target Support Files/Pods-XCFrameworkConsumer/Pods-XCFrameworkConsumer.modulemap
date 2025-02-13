@@ -1,0 +1,6 @@
+framework module Pods_XCFrameworkConsumer {
+  umbrella header "Pods-XCFrameworkConsumer-umbrella.h"
+
+  export *
+  module * { export * }
+}
