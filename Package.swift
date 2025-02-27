@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "QuestionProCXFramework",
-            path: "QuestionProCXFramework.xcframework"
+            path: "./QuestionProCXFramework.xcframework"
         )
     ]
 )
