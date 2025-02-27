@@ -5,6 +5,4 @@ target 'XCFrameworkConsumer' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for XCFrameworkConsumer
-#pod 'QuestionProCXFramework', :git => 'https://github.com/surveyanalyticscorp/ios-cx.git'
 end
