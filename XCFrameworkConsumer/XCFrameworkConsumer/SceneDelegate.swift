@@ -13,8 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = ViewController()
         self.window = window
-        window.makeKeyAndVisible()
-        print("launching survey")
+        window.makeKeyAndVisible()        
 //        SurveyManager.shared.initializeSurvey(window: window)
 
     }

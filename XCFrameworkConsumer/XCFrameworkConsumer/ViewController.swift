@@ -7,9 +7,12 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class ViewController: UIViewController {
     @IBOutlet weak var popupSurveyButton: UIButton?
     @IBOutlet weak var fullScreenSurveyButton: UIButton?
+    @IBOutlet weak var nextScreenButton: UIButton?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -23,5 +26,11 @@ class ViewController: UIViewController {
         let window = AppDelegate.shared.window!
         SurveyManager.shared.initializeSurvey(window: window, showInDialog: false)
     }
+    
+    @IBAction func nextScreenButtonTouchUpInside(_sender: Any) {
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewID") as! SecondViewController
+        self.navigationController?.pushViewController(secondViewController, animated: true);
+    }
+    
 }
 

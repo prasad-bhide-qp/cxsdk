@@ -12,6 +12,7 @@ import QuestionProCXFramework
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     public var window: UIWindow?
+    let touchPoint = TouchPoint()
 
     static var shared: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
@@ -19,13 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if #available(iOS 13.0, *) {
-            
+            SurveyManager.shared.initializeSurvey(window: self.window!, showInDialog: true)
         } else {
             if (self.window != nil) {
-                SurveyManager.shared.initializeSurvey(window: window!, showInDialog: true)
+                SurveyManager.shared.initializeSurvey(window: self.window!, showInDialog: true)
             }
         }
         return true
+    }
+    
+    
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        GlobalManager.shared.iQuestionProCXManager.clearSession()
     }
 }
 
