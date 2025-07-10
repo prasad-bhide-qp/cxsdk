@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4BB7A7E61C21DBD72DC97A0D /* Pods_XCFrameworkConsumer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BACCE8F1629D9813D24D13 /* Pods_XCFrameworkConsumer.framework */; };
-		8420E34B2DB8EF97009E3D2E /* QuestionProCXFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 8420E34A2DB8EF96009E3D2E /* QuestionProCXFramework */; };
 		8427A2912D80458D00D9E265 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427A2902D80458D00D9E265 /* SecondViewController.swift */; };
 		8427A2932D80463800D9E265 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427A2922D80463800D9E265 /* ThirdViewController.swift */; };
 		8427A2952D80465300D9E265 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427A2942D80465300D9E265 /* ForthViewController.swift */; };
 		8427A3572D9E6DC800D9E265 /* GlobalQuestionProManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427A3562D9E6DC100D9E265 /* GlobalQuestionProManager.swift */; };
 		8447F6362C5A9FF20067F3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F49F2C58D1AB00154D58 /* Main.storyboard */; };
+		84CE60C82E1FDFDE00FA9CF6 /* QuestionProCXFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8427A31E2D8C3D6400D9E265 /* QuestionProCXFramework.xcframework */; };
+		84CE60C92E1FDFDE00FA9CF6 /* QuestionProCXFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8427A31E2D8C3D6400D9E265 /* QuestionProCXFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84D1569F2D140CCD007DB294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1569E2D140CCD007DB294 /* SceneDelegate.swift */; };
 		84D156A12D141B02007DB294 /* SurveyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D156A02D141B02007DB294 /* SurveyManager.swift */; };
 		84F7F49A2C58D1AB00154D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F4992C58D1AB00154D58 /* AppDelegate.swift */; };
@@ -22,6 +23,20 @@
 		84F7F4A32C58D1AC00154D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F4A22C58D1AC00154D58 /* Assets.xcassets */; };
 		84F7F4A62C58D1AC00154D58 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F4A52C58D1AC00154D58 /* Base */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84CE60CA2E1FDFDE00FA9CF6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84CE60C92E1FDFDE00FA9CF6 /* QuestionProCXFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0EBB6F5F0B6F3D8FBA797700 /* Pods-XCFrameworkConsumer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFrameworkConsumer.debug.xcconfig"; path = "Target Support Files/Pods-XCFrameworkConsumer/Pods-XCFrameworkConsumer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,8 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8420E34B2DB8EF97009E3D2E /* QuestionProCXFramework in Frameworks */,
 				4BB7A7E61C21DBD72DC97A0D /* Pods_XCFrameworkConsumer.framework in Frameworks */,
+				84CE60C82E1FDFDE00FA9CF6 /* QuestionProCXFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +137,7 @@
 				84F7F4922C58D1AB00154D58 /* Sources */,
 				84F7F4932C58D1AB00154D58 /* Frameworks */,
 				84F7F4942C58D1AB00154D58 /* Resources */,
+				84CE60CA2E1FDFDE00FA9CF6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,7 +397,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,7 +407,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -414,7 +430,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,7 +440,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -451,25 +467,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		8420E3492DB8EF96009E3D2E /* XCRemoteSwiftPackageReference "cxsdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/prasad-bhide-qp/cxsdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8420E34A2DB8EF96009E3D2E /* QuestionProCXFramework */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8420E3492DB8EF96009E3D2E /* XCRemoteSwiftPackageReference "cxsdk" */;
-			productName = QuestionProCXFramework;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84F7F48E2C58D1AB00154D58 /* Project object */;
 }

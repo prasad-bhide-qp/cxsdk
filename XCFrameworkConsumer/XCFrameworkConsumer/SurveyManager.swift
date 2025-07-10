@@ -7,7 +7,7 @@ class SurveyManager : NSObject, QuestionProDelegate {
         print("init success host app")
     }
     
-    func initSDKFailed(error: any Error) {
+    func initSDKFailed(error: Error) {
         print("init failed host app \(error)")
     }
     
@@ -21,9 +21,9 @@ class SurveyManager : NSObject, QuestionProDelegate {
 
     func initializeSurvey(window: UIWindow, showInDialog: Bool) {
         GlobalManager.shared.iQuestionProCXManager.enableLogs(enabledLogs: true)
-        let apiKey = "c14d4e28-ab40-4c99-9426-8dac3c42725b"
+        let apiKey = "06ad2888-6768-46a0-987f-bda9a0ed7a1f"
 //        let surveyId = 12174640
-        let touchPoint = touchPoint.initTouchPoint(dataCenter: TouchPoint.DataCenter.DATA_CENTER_EU)
+        let touchPoint = touchPoint.initTouchPoint(dataCenter: TouchPoint.DataCenter.DATA_CENTER_US)
         GlobalManager.shared.iQuestionProCXManager.configure(
             apiKey: apiKey,
             touchPoint: touchPoint,
