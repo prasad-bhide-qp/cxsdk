@@ -26,13 +26,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 SurveyManager.shared.initializeSurvey(window: self.window!, showInDialog: true)
             }
         }
+        
+        NotificationCenter.default.addObserver(
+            forName: .languageChanged,
+            object: nil,
+            queue: .main
+        ) { _ in
+            let rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+            UIApplication.shared.windows.first?.rootViewController = rootVC
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        }
+        
         return true
-    }
-    
-    
-    
-    func applicationWillTerminate(_ application: UIApplication) {
-        GlobalManager.shared.iQuestionProCXManager.clearSession()
     }
 }
 

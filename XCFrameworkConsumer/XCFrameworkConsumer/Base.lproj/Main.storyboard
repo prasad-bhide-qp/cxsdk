@@ -55,12 +55,30 @@
                                     <action selector="popupSurveyButtonTouchUpInside_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VwK-pi-f4Z"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxF-J5-UCd">
+                                <rect key="frame" x="58" y="134" width="276" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWs-YT-TQM">
+                                <rect key="frame" x="115" y="269" width="163" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change Language"/>
+                                <connections>
+                                    <action selector="changeLanguageButtonTouchUpInside_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EwO-u1-Cdt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="pdn-aF-uW0"/>
                     <connections>
+                        <outlet property="changeLanguageButton" destination="tWs-YT-TQM" id="ZXq-Fy-F4p"/>
                         <outlet property="fullScreenSurveyButton" destination="7vm-Dt-vzB" id="IE5-2H-Rb3"/>
+                        <outlet property="localizedLabel" destination="BxF-J5-UCd" id="ogo-Lp-QPw"/>
                         <outlet property="popupSurveyButton" destination="Vnx-t9-dNl" id="WqS-6c-FvS"/>
                     </connections>
                 </viewController>

@@ -12,9 +12,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var popupSurveyButton: UIButton?
     @IBOutlet weak var fullScreenSurveyButton: UIButton?
     @IBOutlet weak var nextScreenButton: UIButton?
+    @IBOutlet weak var localizedLabel: UILabel!
+    @IBOutlet weak var changeLanguageButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.localizedLabel.text = NSLocalizedString("welcome_message", comment: "")
+    }
+    
+    @IBAction func changeLanguageButtonTouchUpInside(_sender: Any) {
+        LocalizationManager.shared.changeLanguage()
     }
     
     @IBAction func popupSurveyButtonTouchUpInside(_sender: Any) {

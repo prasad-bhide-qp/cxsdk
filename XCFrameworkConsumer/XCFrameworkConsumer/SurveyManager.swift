@@ -7,7 +7,7 @@ class SurveyManager : NSObject, QuestionProDelegate {
         print("init success host app")
     }
     
-    func initSDKFailed(error: Error) {
+    func initSDKFailed(error: String) {
         print("init failed host app \(error)")
     }
     
@@ -22,23 +22,13 @@ class SurveyManager : NSObject, QuestionProDelegate {
     func initializeSurvey(window: UIWindow, showInDialog: Bool) {
         GlobalManager.shared.iQuestionProCXManager.enableLogs(enabledLogs: true)
         let apiKey = "06ad2888-6768-46a0-987f-bda9a0ed7a1f"
-//        let surveyId = 12174640
-        let touchPoint = touchPoint.initTouchPoint(dataCenter: TouchPoint.DataCenter.DATA_CENTER_US)
+        let customVariables = [1: "Prasad", 2: "Bhide"]
+        let touchPoint = touchPoint.initTouchPoint(dataCenter: TouchPoint.DataCenter.DATA_CENTER_US, customVariables: customVariables)
         GlobalManager.shared.iQuestionProCXManager.configure(
             apiKey: apiKey,
             touchPoint: touchPoint,
             withWindow: window,
             callbackDelegate: self
         )
-
-//        touchPoint.firstName = "Prasad"
-//        touchPoint.lastName = "Bhide"
-//        touchPoint.customVariable1 = "Pune"
-//        touchPoint.customVariable2 = "India"
-//        touchPoint.customVariable3 = "Wakad"
-//        touchPoint.ShowInDialog = showInDialog
-//        touchPoint.transactionLanguage = "English"
-
-//        iQuestionProCXManager.launchFeedbackSurvey(touchPoint: touchPoint)
     }
 }
