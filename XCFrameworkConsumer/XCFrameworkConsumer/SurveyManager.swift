@@ -10,23 +10,25 @@ class SurveyManager {
     let touchPoint = TouchPoint()
 
     func initializeSurvey(window: UIWindow, showInDialog: Bool) {
-        let apiKey = "5e706b2b-dd69-4df5-bcf9-1fd9190854ad"
-        let surveyId = 12174640
+        let apiKey = "9c27338d-2f3c-44ef-a47f-5d8515bf4aea"
+        let surveyId = 10871
 
         iQuestionProCXManager.initwithAPIKey(
             apiKey: apiKey,
-            dataCenter: TouchPoint.DataCenter.DATA_CENTER_US,
+            dataCenter: TouchPoint.DataCenter.DATA_CENTER_KSA,
             withWindow: window
         )
 
         let touchPoint = touchPoint.initTouchPoint(surveyId: surveyId)
-        touchPoint.firstName = "Prasad"
-        touchPoint.lastName = "Bhide"
-        touchPoint.customVariable1 = "Pune"
-        touchPoint.customVariable2 = "India"
-        touchPoint.customVariable3 = "Wakad"
+        touchPoint.firstName = "Mobile"
+        touchPoint.lastName = "QuestionPro"
+        touchPoint.customVariables?[4] = "Prasad"
+        touchPoint.customVariables?[6] = "Datta"
         touchPoint.ShowInDialog = showInDialog
-        touchPoint.transactionLanguage = "English"
+        touchPoint.themeColor = "#4df0d7"
+        touchPoint.email = "mobile@questionpro.com"
+        touchPoint.segmentCode = "android"
+        touchPoint.transactionLanguage = "en"
 
         iQuestionProCXManager.launchFeedbackSurvey(touchPoint: touchPoint)
     }

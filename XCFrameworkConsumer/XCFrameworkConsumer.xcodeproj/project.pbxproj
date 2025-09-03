@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		4BB7A7E61C21DBD72DC97A0D /* Pods_XCFrameworkConsumer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BACCE8F1629D9813D24D13 /* Pods_XCFrameworkConsumer.framework */; };
 		8447F6362C5A9FF20067F3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F49F2C58D1AB00154D58 /* Main.storyboard */; };
+		845A30DB2E68192A004E6D69 /* QuestionProCXFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 845A30DA2E68192A004E6D69 /* QuestionProCXFramework */; };
 		84D1569F2D140CCD007DB294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1569E2D140CCD007DB294 /* SceneDelegate.swift */; };
 		84D156A12D141B02007DB294 /* SurveyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D156A02D141B02007DB294 /* SurveyManager.swift */; };
-		84DB0C1F2D5E0C8B0041ED2E /* QuestionProCXFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 84DB0C1E2D5E0C8B0041ED2E /* QuestionProCXFramework */; };
 		84F7F49A2C58D1AB00154D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F4992C58D1AB00154D58 /* AppDelegate.swift */; };
 		84F7F49E2C58D1AB00154D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F49D2C58D1AB00154D58 /* ViewController.swift */; };
 		84F7F4A12C58D1AB00154D58 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F4A02C58D1AB00154D58 /* Base */; };
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DB0C1F2D5E0C8B0041ED2E /* QuestionProCXFramework in Frameworks */,
+				845A30DB2E68192A004E6D69 /* QuestionProCXFramework in Frameworks */,
 				4BB7A7E61C21DBD72DC97A0D /* Pods_XCFrameworkConsumer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +143,7 @@
 			);
 			mainGroup = 84F7F48D2C58D1AB00154D58;
 			packageReferences = (
-				84DB0C1D2D5E0C8B0041ED2E /* XCRemoteSwiftPackageReference "ios-cx" */,
+				845A30D92E68192A004E6D69 /* XCRemoteSwiftPackageReference "ios-cx" */,
 			);
 			productRefGroup = 84F7F4972C58D1AB00154D58 /* Products */;
 			projectDirPath = "";
@@ -436,20 +436,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		84DB0C1D2D5E0C8B0041ED2E /* XCRemoteSwiftPackageReference "ios-cx" */ = {
+		845A30D92E68192A004E6D69 /* XCRemoteSwiftPackageReference "ios-cx" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/surveyanalyticscorp/ios-cx/";
+			repositoryURL = "https://github.com/surveyanalyticscorp/ios-cx.git";
 			requirement = {
 				kind = exactVersion;
-				version = 1.2.1;
+				version = 1.4.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		84DB0C1E2D5E0C8B0041ED2E /* QuestionProCXFramework */ = {
+		845A30DA2E68192A004E6D69 /* QuestionProCXFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84DB0C1D2D5E0C8B0041ED2E /* XCRemoteSwiftPackageReference "ios-cx" */;
+			package = 845A30D92E68192A004E6D69 /* XCRemoteSwiftPackageReference "ios-cx" */;
 			productName = QuestionProCXFramework;
 		};
 /* End XCSwiftPackageProductDependency section */
