@@ -8,7 +8,11 @@
 import UIKit
 import QuestionProCXFramework
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, QuestionProCallbackDelegate {
+    func getSurveyURL(surveyURL: String) {
+        print("launch survey URL inside SecondViewController :\(surveyURL)")
+    }
+    
     @IBOutlet weak var nextScreenButton: UIButton?
     @IBOutlet weak var bcakScreenButton: UIButton?
     
@@ -16,7 +20,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         GlobalManager.shared.iQuestionProCXManager.setScreenName(screenName: "SecondScreen")
         view.backgroundColor = .white
-
+        GlobalManager.shared.iQuestionProCXManager.setQuestionProCallbackDelegate(questionProCallbackDelegate: self)
         let button = UIButton(type: .system)
         button.setTitle("Show Popup", for: .normal)
         button.addTarget(self, action: #selector(showPopup), for: .touchUpInside)

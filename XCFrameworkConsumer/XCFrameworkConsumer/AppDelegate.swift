@@ -12,7 +12,7 @@ import QuestionProCXFramework
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     public var window: UIWindow?
-    let touchPoint = TouchPoint()
+//    let touchPoint = TouchPoint()
 
     static var shared: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
