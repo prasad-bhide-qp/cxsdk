@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
     spec.license       = { :type => 'MIT', :file => 'LICENSE' }
     spec.source        = { :git => 'https://github.com/prasad-bhide-qp/cxsdk.git', :tag => spec.version }
     spec.swift_version = '5.0'
-    spec.ios.deployment_target = '14.0'
+    spec.ios.deployment_target = '13.0'
     spec.vendored_frameworks = [
       "QuestionProCXFramework.xcframework"
     ]
