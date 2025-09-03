@@ -1,0 +1,26 @@
+{
+  "name": "QuestionProCXFramework",
+  "version": "2.1",
+  "summary": "Core Library",
+  "description": "This is QuestionPro`s CX Survey library.",
+  "homepage": "https://www.questionpro.com",
+  "authors": {
+    "QuestionPro": "mobile@questionpro.com"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "https://github.com/surveyanalyticscorp/ios-cx.git",
+    "tag": "2.1"
+  },
+  "swift_versions": "6.0",
+  "platforms": {
+    "ios": "14"
+  },
+  "vendored_frameworks": [
+    "QuestionProCXFramework.xcframework"
+  ],
+  "swift_version": "6.0"
+}

@@ -13,7 +13,7 @@ class SurveyManager : NSObject, QuestionProInitDelegate {
     
     static let shared = SurveyManager()
 
-    let touchPoint = TouchPoint()
+//    let touchPoint = TouchPoint()
 
     func initializeSurvey(window: UIWindow, showInDialog: Bool) {
         GlobalManager.shared.iQuestionProCXManager.enableLogs(enabledLogs: false)
@@ -23,7 +23,7 @@ class SurveyManager : NSObject, QuestionProInitDelegate {
 //        let apiKey = "5350a2b4-90f5-4078-9ce4-8df1247b46cc"
         let customVariables = [1: "Prasad", 2: "Bhide"]
         
-        let touchPoint = touchPoint.initTouchPoint(dataCenter: TouchPoint.DataCenter.DATA_CENTER_US, customVariables: customVariables)
+        let touchPoint = TouchPoint.initTouchPoint(dataCenter: TouchPoint.DataCenter.DATA_CENTER_US, configType: TouchPoint.ConfigType.INTERCEPT)
         
         QuestionProCX.getinstance().configure(
             apiKey: apiKey,
