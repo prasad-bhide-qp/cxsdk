@@ -1,13 +1,13 @@
 {
-  "originHash" : "c875a8a3f428fb5b78cf33face08d174c6f8f96e33a7901792f2b4d46f15abdf",
+  "originHash" : "6eb8cbb1fd0aed0db265050da3ba0b602a6abb61e1649185a722314bc0e8e2ea",
   "pins" : [
     {
       "identity" : "ios-cx",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/surveyanalyticscorp/ios-cx/",
+      "location" : "https://github.com/surveyanalyticscorp/ios-cx.git",
       "state" : {
-        "revision" : "412d5beaec2f1036012fbf87ee9cd153338dc770",
-        "version" : "1.2.1"
+        "revision" : "6a5d02d8a4602970597b7c92f6b0efab6065e6f2",
+        "version" : "1.5.5"
       }
     }
   ],

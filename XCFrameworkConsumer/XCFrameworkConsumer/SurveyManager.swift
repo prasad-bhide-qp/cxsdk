@@ -13,11 +13,11 @@ class SurveyManager {
         let apiKey = "5e706b2b-dd69-4df5-bcf9-1fd9190854ad"
         let surveyId = 12174640
 
-        iQuestionProCXManager.initwithAPIKey(
-            apiKey: apiKey,
-            dataCenter: TouchPoint.DataCenter.DATA_CENTER_US,
-            withWindow: window
-        )
+//        iQuestionProCXManager.initwithAPIKey(
+//            apiKey: apiKey,
+//            dataCenter: TouchPoint.DataCenter.DATA_CENTER_US,
+//            withWindow: window
+//        )
 
         let touchPoint = touchPoint.initTouchPoint(surveyId: surveyId)
         touchPoint.firstName = "Prasad"
