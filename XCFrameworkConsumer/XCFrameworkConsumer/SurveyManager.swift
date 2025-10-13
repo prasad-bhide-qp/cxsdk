@@ -2,32 +2,36 @@ import UIKit
 import QuestionProCXFramework
 
 @MainActor
-class SurveyManager {
+class SurveyManager : NSObject, QuestionProInitDelegate {
+    func initSDKSuccess() {
+        print("init success host app")
+    }
+    
+    func initSDKFailed(error: String) {
+        print("init failed host app \(error)")
+    }
+    
     static let shared = SurveyManager()
 
-    private init() {}
-    public var iQuestionProCXManager = QuestionProCXManager.sharedManager
-    let touchPoint = TouchPoint()
+//    let touchPoint = TouchPoint()
 
     func initializeSurvey(window: UIWindow, showInDialog: Bool) {
-        let apiKey = "5e706b2b-dd69-4df5-bcf9-1fd9190854ad"
-        let surveyId = 12174640
-
-        iQuestionProCXManager.initwithAPIKey(
+        GlobalManager.shared.iQuestionProCXManager.enableLogs(enabledLogs: false)
+        //Intercept api key
+        let apiKey = "06ad2888-6768-46a0-987f-bda9a0ed7a1f"
+        //Core survey key
+//        let apiKey = "5350a2b4-90f5-4078-9ce4-8df1247b46cc"
+        let customVariables = [1: "Prasad", 2: "Bhide"]
+        
+        let touchPoint = TouchPoint.initTouchPoint(dataCenter: TouchPoint.DataCenter.DATA_CENTER_US)
+        
+        QuestionProCX.getinstance().configure(
             apiKey: apiKey,
-            dataCenter: TouchPoint.DataCenter.DATA_CENTER_US,
-            withWindow: window
+            touchPoint: touchPoint,
+            withWindow: window,
+            initCallbackDelegate: self
         )
-
-        let touchPoint = touchPoint.initTouchPoint(surveyId: surveyId)
-        touchPoint.firstName = "Prasad"
-        touchPoint.lastName = "Bhide"
-        touchPoint.customVariable1 = "Pune"
-        touchPoint.customVariable2 = "India"
-        touchPoint.customVariable3 = "Wakad"
-        touchPoint.ShowInDialog = showInDialog
-        touchPoint.transactionLanguage = "English"
-
-        iQuestionProCXManager.launchFeedbackSurvey(touchPoint: touchPoint)
+        
+//        QuestionProCX.getinstance().launchFeedbackSurvey(surveyId: 7165860)
     }
 }

@@ -12,6 +12,7 @@ import QuestionProCXFramework
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     public var window: UIWindow?
+//    let touchPoint = TouchPoint()
 
     static var shared: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
@@ -19,12 +20,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if #available(iOS 13.0, *) {
-            
+            SurveyManager.shared.initializeSurvey(window: self.window!, showInDialog: true)
         } else {
             if (self.window != nil) {
-                SurveyManager.shared.initializeSurvey(window: window!, showInDialog: true)
+                SurveyManager.shared.initializeSurvey(window: self.window!, showInDialog: true)
             }
         }
+        
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.didEnterBackgroundNotification,
+            object: nil,
+            queue: .main
+        ) { _ in
+            print("📦 App did enter background - Host app")
+            if let username = CacheUtils.getString(forKey: "username") {
+                print("Username:", username)
+            }
+        }
+        
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.didBecomeActiveNotification,
+            object: nil,
+            queue: .main
+        ) { _ in
+            print("📦 App did enter foreground - Host app")
+            if let username = CacheUtils.getString(forKey: "username") {
+                print("Username:", username)
+            }
+        }
+        
+        NotificationCenter.default.addObserver(
+            forName: .languageChanged,
+            object: nil,
+            queue: .main
+        ) { _ in
+            let rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+            UIApplication.shared.windows.first?.rootViewController = rootVC
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        }
+        
         return true
     }
 }

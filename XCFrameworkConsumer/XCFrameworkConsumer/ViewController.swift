@@ -6,12 +6,41 @@
 //
 
 import UIKit
+import QuestionProCXFramework
 
-class ViewController: UIViewController {
+@available(iOS 13.0, *)
+class ViewController: UIViewController, QuestionProCallbackDelegate {
+    func getSurveyURL(surveyURL: String) {
+        print("launch survey URL inside ViewController: \(surveyURL)")
+    }
+    
     @IBOutlet weak var popupSurveyButton: UIButton?
     @IBOutlet weak var fullScreenSurveyButton: UIButton?
+    @IBOutlet weak var nextScreenButton: UIButton?
+    @IBOutlet weak var localizedLabel: UILabel!
+    @IBOutlet weak var changeLanguageButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.localizedLabel.text = NSLocalizedString("welcome_message", comment: "")
+        GlobalManager.shared.iQuestionProCXManager.setQuestionProCallbackDelegate(questionProCallbackDelegate: self)
+        print("Adding data to user defaults \n\n")
+        CacheUtils.testUserDefaults()
+        executeAfterDelay()
+    }
+    
+    func executeAfterDelay() {
+        print("Task started...")
+
+        // Execute after 5 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+            print("Executed after 10 seconds!")
+            QuestionProCX.getinstance().closeSurveyWindow()
+        }
+    }
+    
+    @IBAction func changeLanguageButtonTouchUpInside(_sender: Any) {
+        LocalizationManager.shared.changeLanguage()
     }
     
     @IBAction func popupSurveyButtonTouchUpInside(_sender: Any) {
@@ -23,5 +52,11 @@ class ViewController: UIViewController {
         let window = AppDelegate.shared.window!
         SurveyManager.shared.initializeSurvey(window: window, showInDialog: false)
     }
+    
+    @IBAction func nextScreenButtonTouchUpInside(_sender: Any) {
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewID") as! SecondViewController
+        self.navigationController?.pushViewController(secondViewController, animated: true);
+    }
+    
 }
 
