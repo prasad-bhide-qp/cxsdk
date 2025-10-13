@@ -28,6 +28,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         NotificationCenter.default.addObserver(
+            forName: UIApplication.didEnterBackgroundNotification,
+            object: nil,
+            queue: .main
+        ) { _ in
+            print("📦 App did enter background - Host app")
+            if let username = CacheUtils.getString(forKey: "username") {
+                print("Username:", username)
+            }
+        }
+        
+        NotificationCenter.default.addObserver(
+            forName: UIApplication.didBecomeActiveNotification,
+            object: nil,
+            queue: .main
+        ) { _ in
+            print("📦 App did enter foreground - Host app")
+            if let username = CacheUtils.getString(forKey: "username") {
+                print("Username:", username)
+            }
+        }
+        
+        NotificationCenter.default.addObserver(
             forName: .languageChanged,
             object: nil,
             queue: .main
