@@ -24,6 +24,19 @@ class ViewController: UIViewController, QuestionProCallbackDelegate {
         super.viewDidLoad()
         self.localizedLabel.text = NSLocalizedString("welcome_message", comment: "")
         GlobalManager.shared.iQuestionProCXManager.setQuestionProCallbackDelegate(questionProCallbackDelegate: self)
+        print("Adding data to user defaults \n\n")
+        CacheUtils.testUserDefaults()
+        executeAfterDelay()
+    }
+    
+    func executeAfterDelay() {
+        print("Task started...")
+
+        // Execute after 5 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+            print("Executed after 10 seconds!")
+            QuestionProCX.getinstance().closeSurveyWindow()
+        }
     }
     
     @IBAction func changeLanguageButtonTouchUpInside(_sender: Any) {
