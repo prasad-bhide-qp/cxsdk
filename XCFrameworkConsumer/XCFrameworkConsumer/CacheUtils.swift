@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// A utility class for saving, retrieving, and deleting simple cached data using UserDefaults.
 final class CacheUtils {
@@ -81,7 +82,7 @@ final class CacheUtils {
         }
     }
     
-    static func testUserDefaults() {
+    static func testUserDefaults(viewController: UIViewController) {
         // Save simple values
         save("John Doe", forKey: "username")
         save(30, forKey: "age")
@@ -90,6 +91,10 @@ final class CacheUtils {
         // Retrieve and print values
         if let username = getString(forKey: "username") {
             print("Username:", username)
+            let alert = UIAlertController(title: "username", message: username, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            
+//            viewController.present(alert, animated: true, completion: nil)
         }
         
         let age = getInt(forKey: "age")

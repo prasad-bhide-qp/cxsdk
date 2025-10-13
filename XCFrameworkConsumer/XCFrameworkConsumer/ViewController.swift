@@ -25,8 +25,8 @@ class ViewController: UIViewController, QuestionProCallbackDelegate {
         self.localizedLabel.text = NSLocalizedString("welcome_message", comment: "")
         GlobalManager.shared.iQuestionProCXManager.setQuestionProCallbackDelegate(questionProCallbackDelegate: self)
         print("Adding data to user defaults \n\n")
-        CacheUtils.testUserDefaults()
-        executeAfterDelay()
+        CacheUtils.testUserDefaults(viewController: self)
+//        executeAfterDelay()
     }
     
     func executeAfterDelay() {
