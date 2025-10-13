@@ -16,8 +16,7 @@
 		842E9BA02E43367800FAED88 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 842E9B9C2E43367800FAED88 /* Localizable.xcstrings */; };
 		8447F6362C5A9FF20067F3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F49F2C58D1AB00154D58 /* Main.storyboard */; };
 		8497377F2E9792890074E20A /* CacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497377E2E9792810074E20A /* CacheUtils.swift */; };
-		8497379A2E9CFFD10074E20A /* QuestionProCXFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D27F9C2E8A556600020DD1 /* QuestionProCXFramework.xcframework */; };
-		8497379B2E9CFFD10074E20A /* QuestionProCXFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84D27F9C2E8A556600020DD1 /* QuestionProCXFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8497379F2E9D01280074E20A /* QuestionProCXFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 8497379E2E9D01280074E20A /* QuestionProCXFramework */; };
 		84D1569F2D140CCD007DB294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1569E2D140CCD007DB294 /* SceneDelegate.swift */; };
 		84D156A12D141B02007DB294 /* SurveyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D156A02D141B02007DB294 /* SurveyManager.swift */; };
 		84F7F49A2C58D1AB00154D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F4992C58D1AB00154D58 /* AppDelegate.swift */; };
@@ -26,20 +25,6 @@
 		84F7F4A32C58D1AC00154D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F4A22C58D1AC00154D58 /* Assets.xcassets */; };
 		84F7F4A62C58D1AC00154D58 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F4A52C58D1AC00154D58 /* Base */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		8497379C2E9CFFD10074E20A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8497379B2E9CFFD10074E20A /* QuestionProCXFramework.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0EBB6F5F0B6F3D8FBA797700 /* Pods-XCFrameworkConsumer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCFrameworkConsumer.debug.xcconfig"; path = "Target Support Files/Pods-XCFrameworkConsumer/Pods-XCFrameworkConsumer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8497379F2E9D01280074E20A /* QuestionProCXFramework in Frameworks */,
 				7DCBC54C5BF7B70B60BB0C71 /* Pods_XCFrameworkConsumer.framework in Frameworks */,
-				8497379A2E9CFFD10074E20A /* QuestionProCXFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +139,6 @@
 				84F7F4922C58D1AB00154D58 /* Sources */,
 				84F7F4932C58D1AB00154D58 /* Frameworks */,
 				84F7F4942C58D1AB00154D58 /* Resources */,
-				8497379C2E9CFFD10074E20A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +174,7 @@
 			);
 			mainGroup = 84F7F48D2C58D1AB00154D58;
 			packageReferences = (
+				8497379D2E9D01280074E20A /* XCRemoteSwiftPackageReference "cxsdk" */,
 			);
 			productRefGroup = 84F7F4972C58D1AB00154D58 /* Products */;
 			projectDirPath = "";
@@ -487,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8497379D2E9D01280074E20A /* XCRemoteSwiftPackageReference "cxsdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/prasad-bhide-qp/cxsdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8497379E2E9D01280074E20A /* QuestionProCXFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8497379D2E9D01280074E20A /* XCRemoteSwiftPackageReference "cxsdk" */;
+			productName = QuestionProCXFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84F7F48E2C58D1AB00154D58 /* Project object */;
 }

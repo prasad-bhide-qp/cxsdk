@@ -369,14 +369,8 @@
           {
             "kind": "Function",
             "name": "getBaseUrl",
-            "printedName": "getBaseUrl(dataCenter:configType:)",
+            "printedName": "getBaseUrl(dataCenter:)",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
               {
                 "kind": "TypeNominal",
                 "name": "String",
@@ -391,8 +385,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:22QuestionProCXFramework8APIUtilsC10getBaseUrl10dataCenter10configTypeS2S_SStFZ",
-            "mangledName": "$s22QuestionProCXFramework8APIUtilsC10getBaseUrl10dataCenter10configTypeS2S_SStFZ",
+            "usr": "s:22QuestionProCXFramework8APIUtilsC10getBaseUrl10dataCenterS2S_tFZ",
+            "mangledName": "$s22QuestionProCXFramework8APIUtilsC10getBaseUrl10dataCenterS2S_tFZ",
             "moduleName": "QuestionProCXFramework",
             "static": true,
             "declAttributes": [

@@ -24,7 +24,7 @@ public struct CoreSurveyURL : Swift.Codable {
   public static func getUpdateInterceptSurveyLaunchEventURL() -> Swift.String
   public static func getCoreSurveyFeedbackURL() -> Swift.String
   @_Concurrency.MainActor public static func updateInterceptSurveyLaunchEvent(interceptData: QuestionProCXFramework.Intercept, visitorId: Swift.String, surveyType: Swift.String)
-  public static func getBaseUrl(dataCenter: Swift.String, configType: Swift.String) -> Swift.String
+  public static func getBaseUrl(dataCenter: Swift.String) -> Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CacheUtils {
