@@ -1,0 +1,15 @@
+{
+  "originHash" : "f87df27557e4b029a7b72d7e4cf0ae5e3304bb1bc7d98427ab3027842c759ea9",
+  "pins" : [
+    {
+      "identity" : "cxsdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/prasad-bhide-qp/cxsdk",
+      "state" : {
+        "revision" : "e6e0ec9539166aafd73ca72248d98dc3294618ba",
+        "version" : "2.2.3"
+      }
+    }
+  ],
+  "version" : 3
+}

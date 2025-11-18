@@ -19,7 +19,7 @@ class SecondViewController: UIViewController, QuestionProCallbackDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        QuestionProCX.getinstance().setDataMappings(dataMappings: ["Color": "Red"])
+        QuestionProCX.getinstance().setDataMappings(dataMappings: ["COLOR": "Blue"])
         GlobalManager.shared.iQuestionProCXManager.setScreenName(screenName: "SecondScreen")
         view.backgroundColor = .white
         GlobalManager.shared.iQuestionProCXManager.setQuestionProCallbackDelegate(questionProCallbackDelegate: self)

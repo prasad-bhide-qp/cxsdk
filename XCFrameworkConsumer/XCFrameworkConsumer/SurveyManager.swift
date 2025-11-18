@@ -32,7 +32,7 @@ class SurveyManager : NSObject, QuestionProInitDelegate {
         )
         
         
-        QuestionProCX.getinstance().setDataMappings(dataMappings: ["First name": "Datta", "mobile": "9028507904", "email": "datta.kunde@questionpro.com"])
+        QuestionProCX.getinstance().setDataMappings(dataMappings: [" First name ": "Datta", "mobile": "9028507904", "email": "datta.kunde@questionpro.com"])
 //        QuestionProCX.getinstance().launchFeedbackSurvey(surveyId: 7165860)
     }
 }
