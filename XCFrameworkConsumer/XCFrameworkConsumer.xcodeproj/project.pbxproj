@@ -15,9 +15,9 @@
 		842E9B9F2E43367800FAED88 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E9B9D2E43367800FAED88 /* LocalizationManager.swift */; };
 		842E9BA02E43367800FAED88 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 842E9B9C2E43367800FAED88 /* Localizable.xcstrings */; };
 		8447F6362C5A9FF20067F3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F49F2C58D1AB00154D58 /* Main.storyboard */; };
+		84758A7B2EC4B0E000C30EE4 /* QuestionProCXFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D27F9C2E8A556600020DD1 /* QuestionProCXFramework.xcframework */; };
+		84758A7C2EC4B0E000C30EE4 /* QuestionProCXFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84D27F9C2E8A556600020DD1 /* QuestionProCXFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8497377F2E9792890074E20A /* CacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497377E2E9792810074E20A /* CacheUtils.swift */; };
-		84BAA4602EA22BC100D1E811 /* QuestionProCXFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D27F9C2E8A556600020DD1 /* QuestionProCXFramework.xcframework */; };
-		84BAA4612EA22BC100D1E811 /* QuestionProCXFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84D27F9C2E8A556600020DD1 /* QuestionProCXFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84D1569F2D140CCD007DB294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1569E2D140CCD007DB294 /* SceneDelegate.swift */; };
 		84D156A12D141B02007DB294 /* SurveyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D156A02D141B02007DB294 /* SurveyManager.swift */; };
 		84F7F49A2C58D1AB00154D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F4992C58D1AB00154D58 /* AppDelegate.swift */; };
@@ -28,13 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		84BAA4622EA22BC100D1E811 /* Embed Frameworks */ = {
+		84758A7D2EC4B0E000C30EE4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				84BAA4612EA22BC100D1E811 /* QuestionProCXFramework.xcframework in Embed Frameworks */,
+				84758A7C2EC4B0E000C30EE4 /* QuestionProCXFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,7 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10087C433C2B57D8DE64687A /* Pods_XCFrameworkConsumer.framework in Frameworks */,
-				84BAA4602EA22BC100D1E811 /* QuestionProCXFramework.xcframework in Frameworks */,
+				84758A7B2EC4B0E000C30EE4 /* QuestionProCXFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,7 @@
 				84F7F4922C58D1AB00154D58 /* Sources */,
 				84F7F4932C58D1AB00154D58 /* Frameworks */,
 				84F7F4942C58D1AB00154D58 /* Resources */,
-				84BAA4622EA22BC100D1E811 /* Embed Frameworks */,
+				84758A7D2EC4B0E000C30EE4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

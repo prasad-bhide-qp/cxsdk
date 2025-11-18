@@ -21,7 +21,6 @@ class SurveyManager : NSObject, QuestionProInitDelegate {
         let apiKey = "06ad2888-6768-46a0-987f-bda9a0ed7a1f"
         //Core survey key
 //        let apiKey = "5350a2b4-90f5-4078-9ce4-8df1247b46cc"
-        let customVariables = [1: "Prasad", 2: "Bhide"]
         
         let touchPoint = TouchPoint.initTouchPoint(dataCenter: TouchPoint.DataCenter.DATA_CENTER_US)
         
@@ -32,6 +31,8 @@ class SurveyManager : NSObject, QuestionProInitDelegate {
             initCallbackDelegate: self
         )
         
+        
+        QuestionProCX.getinstance().setDataMappings(dataMappings: ["First name": "Datta", "mobile": "9028507904", "email": "datta.kunde@questionpro.com"])
 //        QuestionProCX.getinstance().launchFeedbackSurvey(surveyId: 7165860)
     }
 }

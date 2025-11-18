@@ -6,5 +6,6 @@ target 'XCFrameworkConsumer' do
   use_frameworks!
 
   # Pods for XCFrameworkConsumer
-#  pod 'QuestionProCXFramework', :git => 'https://github.com/surveyanalyticscorp/ios-cx.git', :tag => '2.2.2'
+#  pod 'QuestionProCXFramework', :git => 'https://github.com/surveyanalyticscorp/ios-cx.git', :tag => '2.2.3'
+#  pod 'QuestionProCXFramework', :git => 'https://github.com/prasad-bhide-qp/cxsdk', :tag => '2.2.23'
 end
