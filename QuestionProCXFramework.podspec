@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name          = 'QuestionProCXFramework'
-    spec.version       = '2.2.5.1'
+    spec.version       = '2.2.52'
     spec.summary       = 'Core Library'
     spec.description   = 'This is QuestionPro`s CX Survey library.'
     spec.homepage      = 'https://www.questionpro.com'
