@@ -1,13 +1,13 @@
 {
-  "originHash" : "f87df27557e4b029a7b72d7e4cf0ae5e3304bb1bc7d98427ab3027842c759ea9",
+  "originHash" : "6eb8cbb1fd0aed0db265050da3ba0b602a6abb61e1649185a722314bc0e8e2ea",
   "pins" : [
     {
-      "identity" : "cxsdk",
+      "identity" : "ios-cx",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/prasad-bhide-qp/cxsdk",
+      "location" : "https://github.com/surveyanalyticscorp/ios-cx.git",
       "state" : {
-        "revision" : "e6e0ec9539166aafd73ca72248d98dc3294618ba",
-        "version" : "2.2.3"
+        "revision" : "e489d405fd33821d7869584b5bc95410e77f0475",
+        "version" : "2.2.8"
       }
     }
   ],

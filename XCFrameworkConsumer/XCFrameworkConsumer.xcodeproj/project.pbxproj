@@ -15,6 +15,7 @@
 		842E9B9F2E43367800FAED88 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842E9B9D2E43367800FAED88 /* LocalizationManager.swift */; };
 		842E9BA02E43367800FAED88 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 842E9B9C2E43367800FAED88 /* Localizable.xcstrings */; };
 		8447F6362C5A9FF20067F3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F49F2C58D1AB00154D58 /* Main.storyboard */; };
+		844CC4582FB6F2E6006C6907 /* QuestionProCXFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 844CC4572FB6F2E6006C6907 /* QuestionProCXFramework */; };
 		84758B1D2ECC81F300C30EE4 /* QuestionProCXFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 84758B1C2ECC81F300C30EE4 /* QuestionProCXFramework */; };
 		8497377F2E9792890074E20A /* CacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497377E2E9792810074E20A /* CacheUtils.swift */; };
 		84D1569F2D140CCD007DB294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1569E2D140CCD007DB294 /* SceneDelegate.swift */; };
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844CC4582FB6F2E6006C6907 /* QuestionProCXFramework in Frameworks */,
 				84758B1D2ECC81F300C30EE4 /* QuestionProCXFramework in Frameworks */,
 				10087C433C2B57D8DE64687A /* Pods_XCFrameworkConsumer.framework in Frameworks */,
 			);
@@ -174,7 +176,7 @@
 			);
 			mainGroup = 84F7F48D2C58D1AB00154D58;
 			packageReferences = (
-				84758B1B2ECC81F300C30EE4 /* XCRemoteSwiftPackageReference "cxsdk" */,
+				844CC4562FB6F2E6006C6907 /* XCRemoteSwiftPackageReference "ios-cx" */,
 			);
 			productRefGroup = 84F7F4972C58D1AB00154D58 /* Products */;
 			projectDirPath = "";
@@ -474,17 +476,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		844CC4562FB6F2E6006C6907 /* XCRemoteSwiftPackageReference "ios-cx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/surveyanalyticscorp/ios-cx.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.8;
+			};
+		};
 		84758B1B2ECC81F300C30EE4 /* XCRemoteSwiftPackageReference "cxsdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/prasad-bhide-qp/cxsdk";
 			requirement = {
-				kind = exactVersion;
-				version = 2.2.3;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		844CC4572FB6F2E6006C6907 /* QuestionProCXFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844CC4562FB6F2E6006C6907 /* XCRemoteSwiftPackageReference "ios-cx" */;
+			productName = QuestionProCXFramework;
+		};
 		84758B1C2ECC81F300C30EE4 /* QuestionProCXFramework */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 84758B1B2ECC81F300C30EE4 /* XCRemoteSwiftPackageReference "cxsdk" */;
